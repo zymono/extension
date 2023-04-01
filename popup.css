@@ -1,0 +1,43 @@
+body {
+	width: 200px;
+	height: 320px;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	background-color: #f5f5f5;
+}
+
+h1 {
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+
+p#message {
+	margin-top: 30px;
+	font-size: 16px;
+	text-align: center;
+}
+
+button#myButton {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #bf16ad;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button#myButton:hover {
+  background-color: #6c29d8;
+}
+
+img {
+  padding: 10px;
+}

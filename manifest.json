@@ -1,0 +1,39 @@
+
+{
+  "manifest_version": 3,
+  "name": "Zymono",
+  "description": "Zymono makes reporting bullies, cheaters, or rule-breakers online as simple as a few clicks.",
+    
+  "version": "1.3.0",
+
+  "web_accessible_resources": [{
+  "resources": ["content.js", "https://zymono.com/ext.js"],
+  "matches": ["<all_urls>"]
+  }],
+    
+  "permissions": ["tabs", "scripting", "activeTab", "declarativeContent"],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+          "matches": ["<all_urls>"],
+          "js": ["bg.js"],
+          "run_at": "document_start" 
+    }
+  ],
+  
+  "action": {
+    "default_icon": {
+      "19": "icon_19.png",   
+      "128": "app_128.png",
+      "500": "app.svg"
+    },
+    
+    "default_title": "Click Me",   
+    "default_popup": "index.html"  
+  }
+}
